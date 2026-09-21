@@ -2,6 +2,6 @@
 **/project-files/dynamips/**/*.ghost
 **/project-files/dynamips/**/*_iomem
 **/project-files/dynamips/**/*_log.txt
-**/project-files/dynamips/*_stdout.txt
+**/project-files/dynamips/**/*_stdout.txt
 # VPCS / uBridge logs
 **/project-files/vpcs/**/ubridge.log
