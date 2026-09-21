@@ -1,7 +1,10 @@
-# Dynamips runtime / memory files
-**/project-files/dynamips/**/*.ghost
-**/project-files/dynamips/**/*_iomem
-**/project-files/dynamips/**/*_log.txt
-**/project-files/dynamips/**/*_stdout.txt
-# VPCS / uBridge logs
-**/project-files/vpcs/**/ubridge.log
+# Dynamips: ignore everything except saved router configs
+tp1/project-files/dynamips/**
+!tp1/project-files/dynamips/**/
+!tp1/project-files/dynamips/**/configs/
+!tp1/project-files/dynamips/**/configs/**
+
+# VPCS: ignore everything except saved VPCS configs
+tp1/project-files/vpcs/**
+!tp1/project-files/vpcs/**/
+!tp1/project-files/vpcs/**/startup.vpc
