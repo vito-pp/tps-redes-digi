@@ -1,0 +1,6 @@
+# Dynamips runtime files
+*.ghost
+*_iomem
+*.nvram
+*.log
+*.lock

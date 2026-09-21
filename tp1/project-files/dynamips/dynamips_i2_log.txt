@@ -1,0 +1,53 @@
+2026-09-21T00:17:17.373Z HYPERVISOR: Release 0.2.24-amd64/Linux (tag 2023010200)
+2026-09-21T00:17:17.373Z HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50805.
+2026-09-21T00:17:17.381Z HYPERVISOR: exec_cmd: hypervisor version 
+2026-09-21T00:17:17.381Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips 
+2026-09-21T00:17:17.381Z GENERAL: working_dir=/home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips
+2026-09-21T00:17:17.382Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/a08d870e-45e3-4113-b87a-83b0351ce98d 
+2026-09-21T00:17:17.382Z GENERAL: working_dir=/home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/a08d870e-45e3-4113-b87a-83b0351ce98d
+2026-09-21T00:17:17.382Z HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+2026-09-21T00:17:17.382Z VM: VM R2 created.
+2026-09-21T00:17:17.382Z HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+2026-09-21T00:17:17.383Z HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+2026-09-21T00:17:17.383Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:17:17.383Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+2026-09-21T00:17:17.384Z HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+2026-09-21T00:17:17.384Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:17:17.384Z HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x606df838 
+2026-09-21T00:17:17.385Z HYPERVISOR: exec_cmd: vm set_ios R2 /home/vito/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+2026-09-21T00:17:17.385Z HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.5995.0000 
+2026-09-21T00:17:17.386Z HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+2026-09-21T00:17:17.386Z HYPERVISOR: exec_cmd: vm set_ram R2 512 
+2026-09-21T00:17:17.386Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:17:17.387Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+2026-09-21T00:17:18.175Z HYPERVISOR: exec_cmd: nio create_udp udp-67e26d2b-da8d-400a-a0fd-20e82a856de9 10004 127.0.0.1 10005 
+2026-09-21T00:17:18.394Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-67e26d2b-da8d-400a-a0fd-20e82a856de9 
+2026-09-21T00:17:18.395Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:17:19.121Z HYPERVISOR: exec_cmd: nio create_udp udp-3ad1b44e-fbe4-471a-96b1-00e82dd2e1c2 10016 127.0.0.1 10017 
+2026-09-21T00:17:19.123Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-3ad1b44e-fbe4-471a-96b1-00e82dd2e1c2 
+2026-09-21T00:17:19.123Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:17:21.183Z HYPERVISOR: exec_cmd: nio create_udp udp-493f731d-b4d4-4556-b8f6-f72845410901 10052 127.0.0.1 10053 
+2026-09-21T00:17:21.184Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-493f731d-b4d4-4556-b8f6-f72845410901 
+2026-09-21T00:17:21.185Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:18:39.003Z HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+2026-09-21T00:18:39.004Z VM: VM Ghost created.
+2026-09-21T00:18:39.006Z HYPERVISOR: exec_cmd: vm set_ios Ghost /home/vito/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+2026-09-21T00:18:39.006Z HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+2026-09-21T00:18:39.007Z HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.image-512.ghost 
+2026-09-21T00:18:39.008Z HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+2026-09-21T00:18:39.009Z HYPERVISOR: exec_cmd: vm get_status Ghost 
+2026-09-21T00:18:39.010Z HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+2026-09-21T00:18:39.011Z HYPERVISOR: exec_cmd: vm start Ghost 
+2026-09-21T00:18:39.491Z HYPERVISOR: exec_cmd: vm get_status Ghost 
+2026-09-21T00:18:39.491Z HYPERVISOR: exec_cmd: vm stop Ghost 
+2026-09-21T00:18:39.663Z VM: VM Ghost shutdown.
+2026-09-21T00:18:39.665Z HYPERVISOR: exec_cmd: vm extract_config Ghost 
+2026-09-21T00:18:39.667Z HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+2026-09-21T00:18:39.667Z VM: VM Ghost destroyed.
+2026-09-21T00:18:39.671Z HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+2026-09-21T00:18:39.671Z HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.image-512.ghost 
+2026-09-21T00:18:39.672Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-09-21T00:18:39.674Z HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+2026-09-21T00:18:39.675Z HYPERVISOR: exec_cmd: vm start R2 
+2026-09-21T00:19:09.889Z HYPERVISOR: exec_cmd: vm extract_config R2 
+2026-09-21T02:07:22.135Z HYPERVISOR: exec_cmd: vm extract_config R2 

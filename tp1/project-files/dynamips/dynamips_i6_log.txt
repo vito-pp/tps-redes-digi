@@ -1,0 +1,44 @@
+2026-09-21T00:17:17.665Z HYPERVISOR: Release 0.2.24-amd64/Linux (tag 2023010200)
+2026-09-21T00:17:17.665Z HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44781.
+2026-09-21T00:17:17.672Z HYPERVISOR: exec_cmd: hypervisor version 
+2026-09-21T00:17:17.672Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips 
+2026-09-21T00:17:17.672Z GENERAL: working_dir=/home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips
+2026-09-21T00:17:17.673Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/a525fc4f-a210-4556-881f-60062ed1e6d3 
+2026-09-21T00:17:17.673Z GENERAL: working_dir=/home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/a525fc4f-a210-4556-881f-60062ed1e6d3
+2026-09-21T00:17:17.673Z HYPERVISOR: exec_cmd: vm create R6 6 c7200 
+2026-09-21T00:17:17.673Z VM: VM R6 created.
+2026-09-21T00:17:17.673Z HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5005 
+2026-09-21T00:17:17.674Z HYPERVISOR: exec_cmd: c7200 get_mac_addr R6 
+2026-09-21T00:17:17.674Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:17.674Z HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-FE 
+2026-09-21T00:17:17.674Z HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+2026-09-21T00:17:17.675Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:17.675Z HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x606df838 
+2026-09-21T00:17:17.675Z HYPERVISOR: exec_cmd: vm set_ios R6 /home/vito/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+2026-09-21T00:17:17.676Z HYPERVISOR: exec_cmd: c7200 set_mac_addr R6 ca06.5a16.0000 
+2026-09-21T00:17:17.676Z HYPERVISOR: exec_cmd: vm set_nvram R6 512 
+2026-09-21T00:17:17.677Z HYPERVISOR: exec_cmd: vm set_ram R6 512 
+2026-09-21T00:17:17.677Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:17.677Z HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 PA-2FE-TX 
+2026-09-21T00:17:17.677Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:17.678Z HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 PA-2FE-TX 
+2026-09-21T00:17:19.293Z HYPERVISOR: exec_cmd: nio create_udp udp-06b51ccb-d150-4d93-8084-a4d65f3e4260 10022 127.0.0.1 10023 
+2026-09-21T00:17:19.505Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 1 udp-06b51ccb-d150-4d93-8084-a4d65f3e4260 
+2026-09-21T00:17:19.506Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:20.502Z HYPERVISOR: exec_cmd: nio create_udp udp-9f0e897a-6849-404a-bb1e-366095d263f8 10034 127.0.0.1 10035 
+2026-09-21T00:17:20.503Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-9f0e897a-6849-404a-bb1e-366095d263f8 
+2026-09-21T00:17:20.504Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:20.663Z HYPERVISOR: exec_cmd: nio create_udp udp-b4f8ba78-a674-4981-a24b-af5c8e99c819 10038 127.0.0.1 10039 
+2026-09-21T00:17:20.665Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-b4f8ba78-a674-4981-a24b-af5c8e99c819 
+2026-09-21T00:17:20.665Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:21.702Z HYPERVISOR: exec_cmd: nio create_udp udp-9b75cbab-41c0-4492-b3a8-eb858cf22fe1 10064 127.0.0.1 10065 
+2026-09-21T00:17:21.703Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 2 0 udp-9b75cbab-41c0-4492-b3a8-eb858cf22fe1 
+2026-09-21T00:17:21.704Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:17:58.763Z HYPERVISOR: exec_cmd: vm set_ios R6 /home/vito/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+2026-09-21T00:18:39.934Z HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+2026-09-21T00:18:39.936Z HYPERVISOR: exec_cmd: vm set_ghost_file R6 /home/vito/Documents/facu/5y/2Q/redes-digi/tps/tp1/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.image-512.ghost 
+2026-09-21T00:18:39.937Z HYPERVISOR: exec_cmd: vm get_status R6 
+2026-09-21T00:18:39.939Z HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+2026-09-21T00:18:39.939Z HYPERVISOR: exec_cmd: vm start R6 
+2026-09-21T00:19:10.185Z HYPERVISOR: exec_cmd: vm extract_config R6 
+2026-09-21T02:07:22.418Z HYPERVISOR: exec_cmd: vm extract_config R6 

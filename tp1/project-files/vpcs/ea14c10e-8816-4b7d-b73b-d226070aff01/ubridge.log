@@ -1,0 +1,6 @@
+uBridge version 1.1.1 running with libpcap version 1.10.6 (64-bit time_t, with TPACKET_V3)
+Hypervisor TCP control server started (IP localhost port 37067).
+UDP tunnel connecting from local port 10067 to IPv4 address 127.0.0.1 on port 10066
+UDP tunnel connecting from local port 10047 to IPv4 address 127.0.0.1 on port 10046
+Source NIO listener thread for VPCS-ea14c10e-8816-4b7d-b73b-d226070aff01 has started
+Destination NIO listener thread for VPCS-ea14c10e-8816-4b7d-b73b-d226070aff01 has started
