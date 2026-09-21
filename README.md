@@ -12,7 +12,7 @@ c7200-adventerprisek9-mz.124-24.T5.bin
 
 The image is **not included** in the repo. Add it manually to GNS3.
 
-Also required:
+Also required (Linux):
 
 ```text
 dynamips
