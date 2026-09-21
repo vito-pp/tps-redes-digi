@@ -36,6 +36,7 @@ ip address 10.0.12.1 255.255.255.252
 duplex full
 no shutdown
 end
+write
 ```
 
 ### R2
@@ -48,6 +49,7 @@ ip address 10.0.12.2 255.255.255.252
 duplex full
 no shutdown
 end
+write
 ```
 
 Connectivity checked:

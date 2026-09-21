@@ -1,6 +1,7 @@
-# Dynamips runtime files
-*.ghost
-*_iomem
-*.nvram
-*.log
-*.lock
+# Dynamips runtime / memory files
+**/project-files/dynamips/**/*.ghost
+**/project-files/dynamips/**/*_iomem
+**/project-files/dynamips/**/*_log.txt
+**/project-files/dynamips/*_stdout.txt
+# VPCS / uBridge logs
+**/project-files/vpcs/**/ubridge.log
