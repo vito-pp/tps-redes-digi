@@ -1,9 +1,9 @@
 
 ### 1\. Topology and configuration
 
-- [ ] Screenshot the complete GNS3 topology with router names, interfaces, subnets, and AS numbers.
-- [ ] Document all router interface addresses, loopbacks, PC addresses, masks, and gateways.
-- [ ] Resolve or explain the differences from the assignment: `20.0.x.0/30` internal OSPF links, `30.0.36.0/30` between R3–R6, and the two `/25` LANs on R5/R6.
+- [X] Screenshot the complete GNS3 topology with router names, interfaces, subnets, and AS numbers.
+- [X] Document all router interface addresses, loopbacks, PC addresses, masks, and gateways.
+- [X] Resolve or explain the differences from the assignment: `20.0.x.0/30` internal OSPF links, `30.0.36.0/30` between R3–R6, and the two `/25` LANs on R5/R6.
 - [ ] Save `show running-config` from every router.
 - [ ] Check `show ip interface brief`: all required interfaces have the correct addresses and are up.
 - [ ] Check interface speed and duplex using `show interfaces`.
